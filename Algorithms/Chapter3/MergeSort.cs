@@ -40,7 +40,7 @@ namespace Algorithms
                         newArray[i] = partA[j];
                         j++;
                     }
-                    else if (partA[j] > partB[k])
+                    else 
                     {
                         newArray[i] = partB[k];
                         k++;

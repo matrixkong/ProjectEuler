@@ -48,6 +48,7 @@
     <Compile Include="Pro13_Large sum.cs" />
     <Compile Include="Pro14_LongestCollatzsequence.cs" />
     <Compile Include="Pro15_LatticePaths.cs" />
+    <Compile Include="Pro17_NumberLetterCounts.cs" />
     <Compile Include="Pro4_LargestPalindromeProduct.cs" />
     <Compile Include="Pro3_LargestPrimeFactor.cs" />
     <Compile Include="Pro7_Prime10001.cs" />
