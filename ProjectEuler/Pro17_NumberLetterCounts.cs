@@ -106,7 +106,7 @@ namespace ProjectEuler
                 foreach (string line in array)
                 { 
                         file.WriteLine(line); 
-                }
+                } 
             }
             var sum = 0;
             foreach (var s in array)
