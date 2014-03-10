@@ -46,29 +46,28 @@ namespace ProjectEuler
                 if (string.IsNullOrEmpty(array[i]))
                 {
                     var result = new StringBuilder();
-                    var singleDigit = i % 10;
-                    var doubleDigit = i % 100;
-
-
+                    var unitsDigit = i % 10; // get first digit
+                    var doubleDigit = i % 100;  //get first two digits number
                     if (string.IsNullOrEmpty(array[doubleDigit]))
                     {
-                        result.Append(array[singleDigit]);
-                        var secondDigit = (doubleDigit - singleDigit) / 10;
-                        var tempNumber = doubleDigit - singleDigit;
+                        result.Append(array[unitsDigit]); // append the units digit
 
-                        if (secondDigit >= 2)
+                        var tensDigit = (doubleDigit - unitsDigit) / 10; // get tens digit
+                        var tensNumber = doubleDigit - unitsDigit; //tens number 
+
+                        if (tensDigit >= 2)
                         {
-                            if (string.IsNullOrEmpty(array[tempNumber]))
+                            if (string.IsNullOrEmpty(array[tensNumber])) // check if number been cached eg: twenty, thirty
                             {
-                                result.Append(array[secondDigit]);
+                                result.Append(array[tensDigit]); // create tens number string
                                 result.Append(ty);
                             }
                             else
                             {
-                                result.Append(array[tempNumber]);
+                                result.Append(array[tensNumber]);
                             }
                         }
-                        else if (secondDigit > 0)
+                        else if (tensDigit >= 1)// if number is less than 20 and bigger than 10
                         {
                             result.Append(teen);
                         }
@@ -81,9 +80,9 @@ namespace ProjectEuler
                     if (i >= 100)
                     {
                         var tripleDigit = i / 100;
-                        if (doubleDigit != 0)
-                            result.Append(and);
-                        result.Append(array[tripleDigit]);
+                        if (doubleDigit != 0) // check if only have The Hundreds 
+                            result.Append(and); 
+                        result.Append(array[tripleDigit]); 
                         result.Append(hundred);
                     }
                     array[i] = result.ToString();
