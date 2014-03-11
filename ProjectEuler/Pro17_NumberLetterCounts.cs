@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro17_NumberLetterCounts
+    public class Pro17NumberLetterCounts
     {
-        public static void Main()
+        public static void NumberLetterCounts()
         {
 
             const string teen = "teen"; // for 10 ~ 20.

@@ -8,7 +8,7 @@ namespace ProjectEuler
 {
     public class Pro9SpecialPythagoreanTriplet
     {
-        public static void test()
+        public static void SpecialPythagoreanTriplet()
         {
             for (var a = 3; a < (1000-3)/3; a++)
             {

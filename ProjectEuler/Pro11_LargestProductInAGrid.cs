@@ -8,7 +8,7 @@ namespace ProjectEuler
 {
     public class Pro11LargestProductInAGrid
     {
-        public static void Test()
+        public static void LargestProductInAGrid()
         {
             var a = 0;
             var b = 0;

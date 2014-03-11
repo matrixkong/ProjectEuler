@@ -9,7 +9,7 @@ namespace ProjectEuler
     public class Pro14LongestCollatzsequence
     {
         private static Dictionary<long, long> dict = new Dictionary<long, long>();
-        public static void test()
+        public static void LongestCollatzsequence()
         {
             long longetst = 0;
             int longestI = 0;

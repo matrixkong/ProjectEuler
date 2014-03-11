@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro3_LargestPrimeFactor
+    public class Pro3LargestPrimeFactor
     {
-        static void test()
+        public static void LargestPrimeFactor()
         {
             var max = 0;
             var limit = 600851475143;

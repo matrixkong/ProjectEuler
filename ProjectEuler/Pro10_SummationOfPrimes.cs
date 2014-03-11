@@ -8,7 +8,7 @@ namespace ProjectEuler
 {
     public class Pro10SummationOfPrimes
     {
-        public static void test()
+        public static void SummationOfPrimes()
         {
             long sum = 5;
             var current = 5;

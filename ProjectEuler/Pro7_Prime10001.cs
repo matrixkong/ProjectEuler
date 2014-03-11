@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro7_Prime10001
+    public class Pro7Prime10001
     {
-        public static void test()
+        public static void Prime10001()
         {
             var watch = Stopwatch.StartNew();
             watch.Start();

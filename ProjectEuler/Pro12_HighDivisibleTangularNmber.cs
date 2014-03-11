@@ -9,7 +9,7 @@ namespace ProjectEuler
     public class Pro12HighDivisibleTangularNmber
     {
         //there is a better solution for this.
-        public static void Mine()
+        public static void HighDivisibleTangularNmber()
         {
             long addition = 2; 
             long triangleNumber = 1;

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro4_LargestPalindromeProduct
-    {  
-        public static void Good(string[] args)
+    public class Pro4LargestPalindromeProduct
+    {
+        public static void LargestPalindromeProduct()
         {
             var timePerParse = Stopwatch.StartNew();
             var max = 0;

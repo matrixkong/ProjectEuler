@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro15_LatticePaths
+    public class Pro15LatticePaths
     {
-        public static void test()
+        public static void LatticePaths()
         {
             const int gridSize = 20;
             long[,] grid = new long[gridSize + 1, gridSize + 1];

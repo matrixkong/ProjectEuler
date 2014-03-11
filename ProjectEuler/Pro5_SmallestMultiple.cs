@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    public class Pro5_SmallestMultiple
+    public class Pro5SmallestMultiple
     {
-        public static void test(string[] args)
+        public static void SmallestMultiple()
         {
             var timePerParse = Stopwatch.StartNew();
             long total = 1;
