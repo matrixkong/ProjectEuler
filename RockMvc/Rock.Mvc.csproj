@@ -1,20 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B14A7D53-5BFB-4992-BD69-0959244707E9}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{6A6527ED-BDFF-40CA-B574-E4FA3EC0A36B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjectEuler</RootNamespace>
-    <AssemblyName>ProjectEuler</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>Rock.Mvc</RootNamespace>
+    <AssemblyName>Rock.Mvc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,37 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pro11_LargestProductInAGrid.cs" />
-    <Compile Include="Pro12_HighDivisibleTangularNmber.cs" />
-    <Compile Include="Pro13_Large sum.cs" />
-    <Compile Include="Pro14_LongestCollatzsequence.cs" />
-    <Compile Include="Pro15_LatticePaths.cs" />
-    <Compile Include="Pro17_NumberLetterCounts.cs" />
-    <Compile Include="Pro18_MaximumPathSumI.cs" />
-    <Compile Include="Pro4_LargestPalindromeProduct.cs" />
-    <Compile Include="Pro3_LargestPrimeFactor.cs" />
-    <Compile Include="Pro7_Prime10001.cs" />
-    <Compile Include="Pro10_SummationOfPrimes.cs" />
-    <Compile Include="Pro8_LargestProductASeries.cs" />
-    <Compile Include="Pro9_SpecialPythagoreanTriplet.cs" />
-    <Compile Include="ProjectEuler.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pro5_SmallestMultiple.cs" />
-    <Compile Include="Pro6_SumSquareDifference.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\Pro18_MaximumPathSumI.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MatrixKongLib\Rock.System.csproj">
-      <Project>{69d6743d-2c56-45f0-bd9b-459199e48d07}</Project>
-      <Name>Rock.System</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
