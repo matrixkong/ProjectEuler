@@ -24,7 +24,8 @@ namespace ProjectEuler
             //Pro14LongestCollatzsequence.LongestCollatzsequence();
             //Pro15LatticePaths.LatticePaths();
             //Pro17NumberLetterCounts.NumberLetterCounts(); 
-            Pro18_MaximumPathSumI.MaximumPathSumI();
+            //Pro18_MaximumPathSumI.MaximumPathSumI();
+            Pro19_CountingSundays.CountingSundays();
             Console.ReadKey();  
         }
     }
