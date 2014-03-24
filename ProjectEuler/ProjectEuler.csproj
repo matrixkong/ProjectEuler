@@ -51,6 +51,7 @@
     <Compile Include="Pro17_NumberLetterCounts.cs" />
     <Compile Include="Pro18_MaximumPathSumI.cs" />
     <Compile Include="Pro19_CountingSundays.cs" />
+    <Compile Include="Pro20_FactorialDigitSum.cs" />
     <Compile Include="Pro4_LargestPalindromeProduct.cs" />
     <Compile Include="Pro3_LargestPrimeFactor.cs" />
     <Compile Include="Pro7_Prime10001.cs" />

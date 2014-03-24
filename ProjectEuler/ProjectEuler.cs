@@ -25,7 +25,8 @@ namespace ProjectEuler
             //Pro15LatticePaths.LatticePaths();
             //Pro17NumberLetterCounts.NumberLetterCounts(); 
             //Pro18_MaximumPathSumI.MaximumPathSumI();
-            Pro19_CountingSundays.CountingSundays();
+            //Pro19_CountingSundays.CountingSundays();
+            Pro20_FactorialDigitSum.FactorialDigitSum();
             Console.ReadKey();  
         }
     }
