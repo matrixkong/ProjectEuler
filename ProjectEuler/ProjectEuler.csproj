@@ -54,6 +54,7 @@
     <Compile Include="Pro20_FactorialDigitSum.cs" />
     <Compile Include="Pro4_LargestPalindromeProduct.cs" />
     <Compile Include="Pro3_LargestPrimeFactor.cs" />
+    <Compile Include="Pro50_ConsecutivePrimeSum.cs" />
     <Compile Include="Pro7_Prime10001.cs" />
     <Compile Include="Pro10_SummationOfPrimes.cs" />
     <Compile Include="Pro8_LargestProductASeries.cs" />

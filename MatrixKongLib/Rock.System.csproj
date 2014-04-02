@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Config\ConfigHelper.cs" />
     <Compile Include="IO\File.cs" />
+    <Compile Include="Math\Prime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
