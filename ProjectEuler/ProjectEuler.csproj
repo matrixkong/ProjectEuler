@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pro100_ArrangedProbability.cs" />
     <Compile Include="Pro11_LargestProductInAGrid.cs" />
     <Compile Include="Pro12_HighDivisibleTangularNmber.cs" />
     <Compile Include="Pro13_Large sum.cs" />
