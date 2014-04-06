@@ -11,8 +11,7 @@ using Rock.System.Math;
 namespace ProjectEuler
 {
     public class Pro50_ConsecutivePrimeSum
-    {
-        private static int Max = 80000;
+    { 
         public static void ConsecutivePrimeSum()
         {
             var BaseNum = 2;
