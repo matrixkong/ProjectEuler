@@ -5,58 +5,45 @@ using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Win32.SafeHandles;
 using Rock.System.Math;
 
 namespace ProjectEuler
 {
     public class Pro50_ConsecutivePrimeSum
     {
-        public static int MaxLength = 80000;
-
+        private static int Max = 80000;
         public static void ConsecutivePrimeSum()
         {
-            var primeArray = new int[MaxLength];
-            var index = -1;
+            var BaseNum = 2;
             var longest = 0;
-            var sum = 0;
-            for (var i = 2; i < 1000000; i++)
-            {
-                if (index >= MaxLength - 1)
-                    throw new StackOverflowException();
-                if (i.IsPrime())
-                {
-                    index++;
-                    primeArray[index] = i;
-                }
-            }
-
-            var start = 0;
-            var end = index;
-            index = 0;
-            var length = 0;
+            var longestCount = 0; 
             while (true)
             {
-                while (index <= end)
-                {
-                    var tempSum = primeArray[index] + sum;
-                    if (tempSum >= primeArray[end])
-                        break;
-                    sum = tempSum;
-                    index++;
-                    if (sum.IsPrime() && index - start > length && longest<sum)
+                var num = BaseNum;
+                var sum = 0;
+                var count = 0; 
+                while (sum < 1000000)
+                { 
+                    if (num.IsPrime())
                     {
-                        longest = sum;
-                        length = index - start;
+                        sum = num + sum;
+                        count++;
+                        if (sum.IsPrime() && count > longestCount && sum < 1000000)
+                        {
+                            longestCount = count;
+                            longest = sum;
+                        }
                     }
+                    num++;
                 }
-                start++;
-                if (end - start < length)
+                while (!(++BaseNum).IsPrime()) ;
+                if (BaseNum + longestCount >= 1000000)
+                {
                     break;
-                index = start;
-                sum = 0;
+                }
             }
-            var value = primeArray.Select(i => i == 997651).ToList();
-            Console.Write("{0},{1}", longest, length);
+            Console.Write("{0},{1}",longest,longestCount);
         }
     }
 }
